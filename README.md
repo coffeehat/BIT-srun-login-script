@@ -12,4 +12,9 @@ fork自https://coding.net/u/huxiaofan1223/p/jxnu_srun/git
 |:-:|:-:|
 |BitSrunLogin/|深澜登录函数包|
 |demo.py|登录示例脚本|
-|always_online.py|后台运行脚本，提供校园网掉线自动重连功能|
+|always_online.py|在线监测脚本，如果监测到掉线则自动重连|
+
+always_online.py可采用`nohup`命令挂在后台：
+``` bash
+nohup python always_online.py &
+```
