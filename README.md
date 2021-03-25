@@ -1,5 +1,7 @@
 fork自https://coding.net/u/huxiaofan1223/p/jxnu_srun/git
 
+另有支持多平台（包括openwrt）的golang版本，请见：https://github.com/Mmx233/BitSrunLoginGo
+
 作者已经毕业，很难再更新代码了。如果校园网有变动，并且你有好的解决方案，还请提个pr哈。非常感谢~~ o(*￣▽￣*)ブ
 
 # 概述
