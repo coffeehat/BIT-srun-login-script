@@ -2,7 +2,8 @@ fork自：https://github.com/coffeehat/BIT-srun-login-script
 
 另有支持多平台（包括openwrt）的golang版本，请见：https://github.com/Mmx233/BitSrunLoginGo
 
-经过几个参数修改，已经可以实现中国科学院大学雁栖湖校区的上网认证（深澜）。  P.S.没改几个地方，还不如readme改的多😂
+经过几个参数修改，已经可以实现中国科学院大学雁栖湖校区的上网认证（深澜）。  
+P.S.没改几个地方，还不如readme改的多😂
 
 # 概述
 
