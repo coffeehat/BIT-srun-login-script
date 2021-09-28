@@ -22,3 +22,19 @@ always_online.py可采用`nohup`命令挂在后台：
 ``` bash
 nohup python always_online.py &
 ```
+
+# AutoLoad文件使用说明
+
+考虑到深澜校园网登录已经增加了一系列加密处理机制，抓包分析相对复杂，所以本脚本基于selenium库实现了校园网的自动登陆
+
+由于selenium库本质上是一个浏览器自动控制工具，所以本脚本需要预先安装Chrome或Firefox浏览器及其相应的驱动，配置教程可以参考[Windows](https://www.cnblogs.com/xyztank/articles/13457260.html)、[Ubuntu、Mac](https://cloud.tencent.com/developer/article/1514874),也正因如此，脚本虽然修改应用比较简单，但在openwrt最终平台上运行可能会存在一些问题...，大家有什么好的想法也可以继续 ~~ o(*￣▽￣*)ブ
+
+为了降低大家在公共服务器上部署AutoLoad.py文件时泄露账号密码的风险，建议大家在使用时新建tmux窗口运行，输入账号密码确认运行起来以后可以直接kill掉tmux 
+
+如需要解除此python文件部署时可以使用以下命令查找任务ID并关闭任务
+
+``` bash
+ps aux | grep python
+kill <PID>
+```
+简单写一下，希望能帮到大家🤪
