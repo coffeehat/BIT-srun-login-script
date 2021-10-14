@@ -1,4 +1,4 @@
-fork自（目前404了）：https://coding.net/u/huxiaofan1223/p/jxnu_srun/git
+加密逻辑来自（目前404了）：https://coding.net/u/huxiaofan1223/p/jxnu_srun/git
 
 另有支持多平台（包括openwrt）的golang版本，请见：https://github.com/Mmx233/BitSrunLoginGo
 
