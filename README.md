@@ -17,15 +17,16 @@
 |BitSrunLogin/|深澜登录函数包|
 |demo.py|登录示例脚本|
 |always_online.py|在线监测脚本，如果监测到掉线则自动重连|
+|AutoLoad.py|采用selenium库实现的校园网自动登录|
 
 always_online.py可采用`nohup`命令挂在后台：
 ``` bash
 nohup python always_online.py &
 ```
+---
+# AutoLoad.py使用说明（shrrr提供）
 
-# AutoLoad文件使用说明
-
-考虑到深澜校园网登录已经增加了一系列加密处理机制，抓包分析相对复杂，所以本脚本基于selenium库实现了校园网的自动登陆
+考虑到深澜校园网登录已经增加了一系列加密处理机制，抓包分析相对复杂，所以本脚本基于selenium库实现了校园网的自动登录
 
 由于selenium库本质上是一个浏览器自动控制工具，所以本脚本需要预先安装Chrome或Firefox浏览器及其相应的驱动，配置教程可以参考[Windows](https://www.cnblogs.com/xyztank/articles/13457260.html)、[Ubuntu、Mac](https://cloud.tencent.com/developer/article/1514874),也正因如此，脚本虽然修改应用比较简单，但在openwrt最终平台上运行可能会存在一些问题...，大家有什么好的想法也可以继续 ~~ o(*￣▽￣*)ブ
 
