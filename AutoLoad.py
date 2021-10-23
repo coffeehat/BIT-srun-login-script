@@ -25,7 +25,7 @@ def loopLoad(usrname,passwd,browserChoice='firefox'):
             time.sleep(1)
             try: 
                 if browser.find_element_by_id("logout"):
-                    print("Bit-Web stil OK!")
+                    print("Bit-Web still OK!")
                     browser.close()
                     time.sleep(random.randint(3,7))
                     continue
