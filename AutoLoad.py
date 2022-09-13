@@ -6,6 +6,7 @@ import time
 import random
 import argparse
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver import FirefoxOptions,ChromeOptions
 
 
@@ -20,21 +21,23 @@ def loopLoad(usrname,passwd,browserChoice='firefox'):
             opts.add_argument("--headless")
             browser = webdriver.Chrome(options=opts)
         time.sleep(1)
+        
+        el = lambda id : browser.find_element(By.ID, id)
         try:
             browser.get('http://10.0.0.55/')
             time.sleep(1)
             try: 
-                if browser.find_element_by_id("logout"):
+                if el("logout"):
                     print("Bit-Web still OK!")
                     browser.close()
                     time.sleep(random.randint(3,7))
                     continue
             except:
-                browser.find_element_by_id("username").clear()
-                browser.find_element_by_id("password").clear()
-                browser.find_element_by_id("username").send_keys(usrname)
-                browser.find_element_by_id("password").send_keys(passwd)
-                browser.find_element_by_id("login").click()
+                el("username").clear()
+                el("password").clear()
+                el("username").send_keys(usrname)
+                el("password").send_keys(passwd)
+                el("login-account").click()
                 time.sleep(2)
                 print("Bit-Web OK!")
             
