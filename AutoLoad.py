@@ -37,7 +37,7 @@ def loopLoad(usrname,passwd,browserChoice='firefox'):
                 el("password").clear()
                 el("username").send_keys(usrname)
                 el("password").send_keys(passwd)
-                el("login-account").click()
+                el("login").click()
                 time.sleep(2)
                 print("Bit-Web OK!")
             
@@ -47,7 +47,7 @@ def loopLoad(usrname,passwd,browserChoice='firefox'):
             continue
 
 if __name__ == '__main__':
-    browerDict = {1:'firefox',2:'chrome'}
+    browerDict = {'1':'firefox','2':'chrome'}
     browerIdx = input('Please choose your brower number ( 1 for Firefox; 2 for Chrome ):')
     usrname = input("Please input username: ")
     passwd = input("Please input passwd: ")
